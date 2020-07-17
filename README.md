@@ -49,7 +49,7 @@ docker run -p 1234:1234 \
 ```
 
 ### Setup new SonarCloud Project
-
+- https://docs.travis-ci.com/user/sonarcloud/
 - On _SonarCloud_:
     - Click _Plus_ Sign in Upper Right Corner
     - _Analyze New Project_
