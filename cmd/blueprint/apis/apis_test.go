@@ -2,10 +2,10 @@ package apis
 
 import (
 	"bytes"
-	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/config"
-	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/test_data"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
+	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/config"
+	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/test_data"
 	"io/ioutil"
 	"net/http"
 	"net/http/httptest"

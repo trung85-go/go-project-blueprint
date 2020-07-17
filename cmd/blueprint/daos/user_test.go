@@ -1,9 +1,9 @@
 package daos
 
 import (
+	"github.com/stretchr/testify/assert"
 	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/config"
 	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/test_data"
-	"github.com/stretchr/testify/assert"
 	"testing"
 )
 

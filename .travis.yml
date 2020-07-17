@@ -11,15 +11,15 @@ matrix:
         - make build  # Build application
         - test -f bin/linux_amd64/blueprint  # Test for presence of binary built in previous step
         - make all-container  # Make all Docker containers
-        - docker images | grep "^docker.pkg.github.com/martinheinz/go-project-blueprint/blueprint.*__linux_amd64"  # Check presence of created images
+        - docker images | grep "^docker.pkg.github.com/trung85-go/go-project-blueprint/blueprint.*__linux_amd64"  # Check presence of created images
         - make test  # Runs tests inside test image
 
     - language: go  # SonarCloud
       addons:
         sonarcloud:
-          organization: martinheinz-github
+          organization: trung85-go
           token:
-            secure: "tYsUxue9kLZWb+Y8kwU28j2sa0pq20z2ZvZrbKCN7Sw0WGtODQLaK9tZ94u1Sy02qL5QcabukbENmbvfouzXf4EfaKjDmYH9+Ja22X26MfTLVpaCDTQEGmNyREOFCHpjNXPgDMv1C70By5U+aPWSYF/lehB5rFijwCf7rmTFRNUDeotCTCuWb2dIkrX2i6raVu34SvqqGxKQmmH+NPLe7uKO/wXqH+cWQH1P9oJYeVksNGruw4M0MznUeQHeJQYpTLooxhEEzYiBbkerWGDMwBdZdPQwVrO2b8FEDRw/GWTFoL+FkdVMl4n4lrbO/cQLbPMTGcfupNCuVHh1n8cGp8spMkrfQGtKqvDRuz2tBs0n1PWXCRS6pgZQw/ClLPgi/vVryVRwOabIHSQQLRVhcdp8pkYdyX3aH1EdlIHiJLT6sacS0vJPqZMF/HNsPEoHe4YdiYvx/tcYMU63KQVZzgF4HfQMWy69s1d0RZUqd+wrtHU1DHwnkq1TSe+8nMlbvbmMsm6FVqGistrnVjx4C9TjDWQcjprYU40zCvc1uvoSPimVcaD8ITalCDHlEfoV7wZuisV8+gJzOh9pDZ/joohW7/P3zklGgI2sH7qt62GE4o5UyRArzJC7eIj7Oxx6GdbeEqw09M4rCfR1g5tHWIqVHz5CajvkXkPqrRGu2oI="
+            secure: "CG1RoxDn0sJYEX8JiMfhhbHyDo2crdwcZvScvG3sypYoaYq+CSNMADxvuwnXk3LK7sNGvNazWQauEb0olUNDLHxYjT63IWt9quM91iZz2WSnQLlVw/lXy+DFHxQ3F11qi/m6odUejWxZ6bqaowx/ieJRS+DsuXvay7JTFb1uQF4TLTLGnFjRdGZPDIYZAaAm+ATs+joxK5ovkU83fdtS4ssONhQvwlsztj7Sah+WsPi7hvzvB7uRzvoGEgPtp7/MCmeS3zeZ34qodjHFR2cg09hudJmB4x2etvEZPi8f0aoIPrH0AWATSq/POarVfOYKI6jXItVUK8ngfDEab1ClLfIFTqlE8uQabP/7A5dmYv8VSLS61X15DMs1MNknWBayKf3P1l9xExJEY4q1bSLS3AbcBc9Er1ATHbQvXqEmtVicNj0y1TMscPZ2wlab0P2EFLXIcurMmo3NbIjarjlW1IsdRXCRclJCYXeMWdi78NklBrmxvdKtTxtzaqCdYAohXVGwXclovfHSpPDW9RoQj/3LSgKsKPEnp9zBgLWwrXBS5Vr9jcMSNohP+17SmYvOi3IlO5VM+R9w1Ps61G7/BE4wjlhozs974mlEIeQNqPRs4D4hXKIBx6gqATyEkqObn3BC0sRgF7lKapQ8mxFGUxr/N5XxhbJRMtNn9XQz6i0="
       before_script:
         - ./reports.sh  # Creates directories and files for reports
         - export GO111MODULE=on

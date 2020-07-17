@@ -2,8 +2,8 @@ package services
 
 import (
 	"errors"
-	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/models"
 	"github.com/stretchr/testify/assert"
+	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/models"
 	"testing"
 )
 

@@ -2,10 +2,10 @@ package test_data
 
 import (
 	"fmt"
-	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/config"
-	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/models"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
+	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/config"
+	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/models"
 	"io/ioutil"
 	"strings"
 )

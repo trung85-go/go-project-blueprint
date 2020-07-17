@@ -4,7 +4,7 @@
 BIN := blueprint
 
 # Where to push the docker image.
-REGISTRY ?= docker.pkg.github.com/martinheinz/go-project-blueprint
+REGISTRY ?= docker.pkg.github.com/trung85-go/go-project-blueprint
 
 # This version-strategy uses git tags to set the version string
 VERSION := $(shell git describe --tags --always --dirty)

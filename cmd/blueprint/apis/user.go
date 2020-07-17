@@ -1,9 +1,9 @@
 package apis
 
 import (
+	"github.com/gin-gonic/gin"
 	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/daos"
 	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/services"
-	"github.com/gin-gonic/gin"
 	"log"
 	"net/http"
 	"strconv"

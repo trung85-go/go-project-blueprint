@@ -3,12 +3,12 @@ package main
 import (
 	"errors"
 	"fmt"
-	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/apis"
-	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/config"
-	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/httputil"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
+	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/apis"
+	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/config"
+	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/httputil"
 	"log"
 	"net/http"
 

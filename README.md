@@ -15,7 +15,7 @@ You can find more information about this project/repository and how to use it in
 - [Setting Up Swagger Docs for Golang API](https://towardsdatascience.com/setting-up-swagger-docs-for-golang-api-8d0442263641)
 
 ### Setting Up
-- Replace All Occurrences of `martinheinz/go-project-blueprint` with your username repository name
+- Replace All Occurrences of `trung85-go/go-project-blueprint` with your username repository name
 - Replace All Occurrences of `blueprint` with your desired image name
 
 
@@ -30,20 +30,20 @@ Create and Push:
 
 ```bash
 docker login docker.pkg.github.com -u <USERNAME> -p <GITHUB_TOKEN>
-docker build -t  docker.pkg.github.com/martinheinz/go-project-blueprint/blueprint:latest .
+docker build -t  docker.pkg.github.com/trung85-go/go-project-blueprint/blueprint:latest .
 # make container
-docker push docker.pkg.github.com/martinheinz/go-project-blueprint/blueprint:latest
+docker push docker.pkg.github.com/trung85-go/go-project-blueprint/blueprint:latest
 # make push
 ```
 
 Pull and Run:
 
 ```bash
-docker pull docker.pkg.github.com/martinheinz/go-project-blueprint/blueprint:latest
+docker pull docker.pkg.github.com/trung85-go/go-project-blueprint/blueprint:latest
 docker run -p 1234:1234 \
            -e BLUEPRINT_DSN="postgres://<USER>:<PASSWORD>@<DOCKER_SERVICE/URL>:<PORT>/<DB>?sslmode=disable" \
            -e BLUEPRINT_API_KEY="api_key" \
-           docker.pkg.github.com/martinheinz/go-project-blueprint/blueprint:latest
+           docker.pkg.github.com/trung85-go/go-project-blueprint/blueprint:latest
 ```
 
 ### Setup new SonarCloud Project
