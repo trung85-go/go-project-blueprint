@@ -1,8 +1,8 @@
 package daos
 
 import (
-	"github.com/MartinHeinz/go-project-blueprint/cmd/blueprint/config"
-	"github.com/MartinHeinz/go-project-blueprint/cmd/blueprint/models"
+	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/config"
+	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/models"
 )
 
 // UserDAO persists user data in database

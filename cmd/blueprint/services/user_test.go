@@ -2,7 +2,7 @@ package services
 
 import (
 	"errors"
-	"github.com/MartinHeinz/go-project-blueprint/cmd/blueprint/models"
+	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/models"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

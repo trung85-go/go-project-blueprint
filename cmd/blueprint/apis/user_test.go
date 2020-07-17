@@ -1,7 +1,7 @@
 package apis
 
 import (
-	"github.com/MartinHeinz/go-project-blueprint/cmd/blueprint/test_data"
+	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/test_data"
 	"net/http"
 	"testing"
 )

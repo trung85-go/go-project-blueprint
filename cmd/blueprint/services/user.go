@@ -1,6 +1,6 @@
 package services
 
-import "github.com/MartinHeinz/go-project-blueprint/cmd/blueprint/models"
+import "github.com/trung85-go/go-project-blueprint/cmd/blueprint/models"
 
 type userDAO interface {
 	Get(id uint) (*models.User, error)

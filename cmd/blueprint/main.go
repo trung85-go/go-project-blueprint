@@ -3,9 +3,9 @@ package main
 import (
 	"errors"
 	"fmt"
-	"github.com/MartinHeinz/go-project-blueprint/cmd/blueprint/apis"
-	"github.com/MartinHeinz/go-project-blueprint/cmd/blueprint/config"
-	"github.com/MartinHeinz/go-project-blueprint/cmd/blueprint/httputil"
+	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/apis"
+	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/config"
+	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/httputil"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
@@ -15,7 +15,7 @@ import (
 	swaggerFiles "github.com/swaggo/files"
 	"github.com/swaggo/gin-swagger"
 
-	_ "github.com/MartinHeinz/go-project-blueprint/cmd/blueprint/docs"
+	_ "github.com/trung85-go/go-project-blueprint/cmd/blueprint/docs"
 )
 
 // @title Blueprint Swagger API
@@ -27,7 +27,7 @@ import (
 // @contact.email martin7.heinz@gmail.com
 
 // @license.name MIT
-// @license.url https://github.com/MartinHeinz/go-project-blueprint/blob/master/LICENSE
+// @license.url https://github.com/trung85-go/go-project-blueprint/blob/master/LICENSE
 
 // @BasePath /api/v1
 

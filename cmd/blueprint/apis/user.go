@@ -1,8 +1,8 @@
 package apis
 
 import (
-	"github.com/MartinHeinz/go-project-blueprint/cmd/blueprint/daos"
-	"github.com/MartinHeinz/go-project-blueprint/cmd/blueprint/services"
+	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/daos"
+	"github.com/trung85-go/go-project-blueprint/cmd/blueprint/services"
 	"github.com/gin-gonic/gin"
 	"log"
 	"net/http"
