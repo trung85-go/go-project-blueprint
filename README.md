@@ -61,13 +61,13 @@ docker run -p 1234:1234 \
     - Click Set Up
     - Click Configure with Travis
     - Copy the Command to Encrypt the Travis Token
-    - Run `travis encrypt --com <TOKEN_YOU_COPPIED>`
+    - Run `travis encrypt --com <TOKEN_YOU_COPPIED>` (generate token in SonarCloud)
     - Populate the `secure` Field in `.travis.yml` with outputted string
     - Follow steps to populate your `sonar-project.properties`
     - Push
 - On Travis CI:
-    - Set `DOCKER_USERNAME`
-    - Set `DOCKER_PASSWORD` to Your GitHub Registry Token
+    - Set `DOCKER_USERNAME`.  (organization github trung85-go)
+    - Set `DOCKER_PASSWORD` to Your GitHub Registry Token (develop github token)
 
 ### Setup CodeClimate
 - Go to <https://codeclimate.com/github/repos/new>
@@ -75,7 +75,7 @@ docker run -p 1234:1234 \
 - Go to Test Coverage Tab
 - Copy Test Reporter ID
 - Go to Travis and Open Settings for Your Repository
-- Add Environment Variable: name: `CC_TEST_REPORTER_ID`, value: _Copied from CodeClimate_
+- Add Environment Variable: name: `CC_TEST_REPORTER_ID`, value: _Copied from CodeClimate_ (https://codeclimate.com/repos/5f114fcb20e8de018b00b776/settings/test_reporter)
 
 ## Swagger
 
