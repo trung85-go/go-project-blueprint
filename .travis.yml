@@ -39,6 +39,8 @@ matrix:
         - go mod vendor  # Download dependencies
         - make ci  # Run tests and generate reports (See `ci` step in Makefile)
       after_script:
+        # Add Environment Variable: name: CC_TEST_REPORTER_ID, value: Copied from CodeClimate
+        # Get TEST REPORTER ID at: https://codeclimate.com/repos/5f114fcb20e8de018b00b776/settings/test_reporter
         - ./cc-test-reporter after-build -t gocov --exit-code $TRAVIS_TEST_RESULT  # Send report to CodeClimate or notify it of failing build based on exit code
 
     - language: go  # Push if on master

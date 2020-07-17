@@ -36,6 +36,8 @@ docker push docker.pkg.github.com/trung85-go/go-project-blueprint/blueprint:late
 # make push
 ```
 
+List all docker packages on github: https://github.com/trung85-go/go-project-blueprint/packages
+
 Pull and Run:
 
 ```bash
