@@ -4,7 +4,7 @@
 BIN := blueprint
 
 # Where to push the docker image.
-REGISTRY ?= docker.pkg.github.com/martinheinz/go-project-blueprint
+REGISTRY ?= docker.pkg.github.com/trung85-go/go-project-blueprint
 
 # This version-strategy uses git tags to set the version string
 VERSION := $(shell git describe --tags --always --dirty)
@@ -164,8 +164,11 @@ test: $(BUILD_DIRS)
 	    -v $$(pwd)/.go/bin/$(OS)_$(ARCH):/go/bin/$(OS)_$(ARCH)  \
 	    -v $$(pwd)/.go/cache:/.cache                            \
 	    -v $$(pwd)/config:/config                               \
+	    -v $$(pwd)/cmd/blueprint/test_data:/test_data           \
 	    --env HTTP_PROXY=$(HTTP_PROXY)                          \
 	    --env HTTPS_PROXY=$(HTTPS_PROXY)                        \
+	    --env BLUEPRINT_API_KEY=DUMMY                           \
+	    --env BLUEPRINT_DSN=DUMMY                               \
 	    $(TEST_IMAGE)                                           \
 	    /bin/sh -c "                                            \
 	        ARCH=$(ARCH)                                        \
@@ -186,9 +189,12 @@ ci: $(BUILD_DIRS)
 	    -v $$(pwd)/.go/cache:/.cache                            \
 	    -v $$(pwd)/reports:/reports                             \
 	    -v $$(pwd)/config:/config                               \
+	    -v $$(pwd)/cmd/blueprint/test_data:/test_data           \
 	    -v $$(pwd)/:/coverage                                   \
 	    --env HTTP_PROXY=$(HTTP_PROXY)                          \
 	    --env HTTPS_PROXY=$(HTTPS_PROXY)                        \
+		--env BLUEPRINT_API_KEY=DUMMY                           \
+		--env BLUEPRINT_DSN=DUMMY                               \
 	    $(TEST_IMAGE)                                           \
 	    /bin/sh -c "                                            \
 	        ARCH=$(ARCH)                                        \
